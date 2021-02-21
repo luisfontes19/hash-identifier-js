@@ -1,0 +1,20 @@
+{
+  "name": "hash-identifier",
+  "version": "1.0.0",
+  "description": "Identify algorithm that generated the supplied hash",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "hash",
+    "algorithm",
+    "identify",
+    "identifier",
+    "md5",
+    "sha1",
+    "sha"
+  ],
+  "author": "Luis Fontes",
+  "license": "MIT"
+}
