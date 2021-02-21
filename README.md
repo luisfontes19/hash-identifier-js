@@ -37,5 +37,8 @@ The output is sorted by the most relevant algorithms
 List all supported algorithms
 
 ```javascript
-HashIdentifier.supportedAlgorithms
+HashIdentifier.supportedAlgorithms()
 ```
+## VSCode
+
+You can use this script in VSCode with the [Swissknife](https://marketplace.visualstudio.com/items?itemName=luisfontes19.vscode-swissknife) extension
