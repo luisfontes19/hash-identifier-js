@@ -294,13 +294,16 @@ const data = [
       return (strictAlphaNumeric(hash));
     }
   },
+  {
+    order: 123000, name: "BCrypt", example: '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', check: function (hash) {
+      return hash.match(/^\$2[aby]?\$\d{2}\$[.\/A-Za-z0-9]{53}$/) != null
+    }
+  }
 ]
 
 
 const checkAlgorithm = (hash) => {
-  const results = data.filter(alg => {
-    return hash.length === alg.example.length && alg.check(hash)
-  });
+  const results = data.filter(alg => (hash.length === alg.example.length && alg.check(hash)));
 
   return results.sort((a, b) => a.order - b.order).map(r => r.name);
 }
