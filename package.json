@@ -1,6 +1,6 @@
 {
   "name": "hash-identifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Identify algorithm that generated the supplied hash",
   "main": "index.js",
   "scripts": {
